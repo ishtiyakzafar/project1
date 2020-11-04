@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="demo">js ludo</h1>
+
+        <div class="dice">
+            <p>Nahid</p>
+            <img src="dice2.png" id="change">
+        </div>
+
+        <div class="dice">
+            <p>Mannu</p>
+            <img src="dice6.png" id="change1">
+        </div>
+        <div>
+            <button onclick="myfun()">Play</button>
+        </div>
+    </div>
+
+    <script>
+
+        const myfun = () => {
+
+            const player1 = Math.ceil(Math.random() * 6);
+            console.log(player1);
+            const playerdice1 = (`dice${player1}.png`);
+            document.getElementById('change').setAttribute('src', playerdice1);
+
+            const player2 = Math.ceil(Math.random() * 6);
+            console.log(player2);
+            const playerdice2 = (`dice${player2}.png`);
+            document.getElementById('change1').setAttribute('src', playerdice2);
+
+            if (player1 === player2) {
+                document.querySelector('h1').innerHTML = 'draw!';
+            } else if (player1 > player2) {
+                document.querySelector('h1').innerHTML = 'Nahid won :)';
+            } else {
+                document.querySelector('h1').innerHTML = 'Mannu won :)';
+            }
+        }
+    
+
+
+
+    </script>
+
+</body>
+
+</html>

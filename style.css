@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+}
+
+.dice{
+    display: inline-block;
+    text-align:center;
+
+}
+
+body{
+    background-color: pink;
+}
+
+h1{
+    font-size: 3rem;
+    text-shadow: 5px 5px white;
+    color: springgreen;
+}
+p{
+    font-size: 2rem;
+    text-shadow: 3px 3px white; 
+    padding: 30px;
+    color: lime;
+    font-weight: bold;
+}
+button{
+    border: none;
+    padding: 20px 30px;
+    margin: 10px;
+    color: black;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+img{
+    width: 60%;
+}
